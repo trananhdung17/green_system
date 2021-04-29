@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600&display=swap');
+
+$font-family: 'Signika', sans-serif;
+$color-primary: darkorchid;
+$color-secondary: darkred;
+$color-3rd: rgba(217, 68, 238, 1);
+$color-4th: rgba(188, 188, 188, 0.5);
+
+body {
+  padding: 0;
+  font-family: $font-family;
+  font-size: 12pt;
+  .gs-body {
+    padding: 15px;
+  }
+}
+
+.gs-right {
+  text-align: right;
+}
+
+.gs-center {
+  text-align: center;
+}
+
+.gs-justify {
+  text-align: justify;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.gs-icon {
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900;
+  padding: 0 5px;
+  &.gs-btn-open {
+    color: $color-primary;
+    &:before {
+      content: "\f35d";
+    }
+  }
+  &.gs-btn-delete {
+    color: $color-secondary;
+    &:before {
+      content: "\f2ed";
+    }
+  }
+}
+
+.gs-link {
+  cursor: pointer;
+}
+
+.gs-btn {
+  cursor: pointer;
+  border: 1px #ccc solid;
+  padding: 10px 15px;
+  margin: 5px;
+  transition: 0.3s;
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.gs-main-nav {
+  .gs-menu-item {
+    cursor: pointer
+  }
+}
+
+.gs-mps {
+  .gs-tabs {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid $color-primary;
+    .gs-tab-link {
+      border-top-right-radius: 7px;
+      border-top-left-radius: 7px;
+      border-top: 1px solid $color-4th;
+      border-left: 1px solid $color-4th;
+      border-right: 1px solid $color-4th;
+      border-bottom: none;
+      background-color: inherit;
+      float: left;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+      margin: 0 2px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &.active {
+        color: white;
+        background-color: $color-primary;
+        &:hover {
+          background-color: $color-primary;
+        }
+      }
+      &:hover {
+        background-color: $color-4th;
+      }
+
+    }
+  }
+  .gs-tab-content {
+    width: 100%;
+    table {
+      width: 100%;
+    }
+  }
+}

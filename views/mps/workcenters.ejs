@@ -1,0 +1,28 @@
+<div>
+    <div class="gs-right">
+        <button class="gs-btn gs-link">Add Work Center...</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Work Center</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0; i < workcenters.length; i++) { %>
+                <tr>
+                <td><%= workcenters[i].id %></td>
+                <td><%= workcenters[i].name %></td>
+                <td class="gs-center">
+                    <span class="gs-link gs-icon gs-btn-open" data-id="<%= workcenters[i].id %>" data-model="workcenter"></span>
+                    <span class="gs-link gs-icon gs-btn-delete" data-id="<%= workcenters[i].id %>" data-model="workcenter"></span>
+                </td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+</div>

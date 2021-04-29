@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600&display=swap");
+body {
+  padding: 0;
+  font-family: "Signika", sans-serif;
+  font-size: 12pt; }
+  body .gs-body {
+    padding: 15px; }
+
+.gs-right {
+  text-align: right; }
+
+.gs-center {
+  text-align: center; }
+
+.gs-justify {
+  text-align: justify; }
+
+a {
+  color: #00B7FF; }
+
+.gs-icon {
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900;
+  padding: 0 5px; }
+  .gs-icon.gs-btn-open {
+    color: darkorchid; }
+    .gs-icon.gs-btn-open:before {
+      content: "\f35d"; }
+  .gs-icon.gs-btn-delete {
+    color: darkred; }
+    .gs-icon.gs-btn-delete:before {
+      content: "\f2ed"; }
+
+.gs-link {
+  cursor: pointer; }
+
+.gs-btn {
+  cursor: pointer;
+  border: 1px #ccc solid;
+  padding: 10px 15px;
+  margin: 5px;
+  transition: 0.3s; }
+  .gs-btn:hover {
+    background-color: #ddd; }
+
+.gs-main-nav .gs-menu-item {
+  cursor: pointer; }
+
+.gs-mps .gs-tabs {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid darkorchid; }
+  .gs-mps .gs-tabs .gs-tab-link {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top: 1px solid rgba(188, 188, 188, 0.5);
+    border-left: 1px solid rgba(188, 188, 188, 0.5);
+    border-right: 1px solid rgba(188, 188, 188, 0.5);
+    border-bottom: none;
+    background-color: inherit;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    margin: 0 2px; }
+    .gs-mps .gs-tabs .gs-tab-link:first-child {
+      margin-left: 0; }
+    .gs-mps .gs-tabs .gs-tab-link:last-child {
+      margin-right: 0; }
+    .gs-mps .gs-tabs .gs-tab-link.active {
+      color: white;
+      background-color: darkorchid; }
+      .gs-mps .gs-tabs .gs-tab-link.active:hover {
+        background-color: darkorchid; }
+    .gs-mps .gs-tabs .gs-tab-link:hover {
+      background-color: rgba(188, 188, 188, 0.5); }
+
+.gs-mps .gs-tab-content {
+  width: 100%; }
+  .gs-mps .gs-tab-content table {
+    width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

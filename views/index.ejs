@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/awesome/all.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="/js/libs/jquery-3.6.0.min.js" ></script>
+    <script src="/js/boot.js" ></script>
+
+    <!--Begin Addons Scripts-->
+    <script src="/js/mps/script.js"></script>
+    <!--End of Addons Scripts-->
+
+    <script src="/js/menu.js" ></script>  
+  </head>
+  <body>
+    <div class="gs-header">
+      <div class="gs-main-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <% for (var i=0; i < menus.length; i++) { %>
+          <li><a class="gs-menu-item" t-href="<%= menus[i].path %>" t-controller="<%= menus[i].controller %>"><%= menus[i].name %></a></li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+    <div class="gs-body">
+      <div class="gs-main gs-home">
+        <h1>Green System</h1>
+        <div>
+          Hi, I've built some tools to help you do your work easier. Have fun!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

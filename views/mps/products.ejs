@@ -1,0 +1,30 @@
+<div>
+    <div class="gs-right">
+        <button class="gs-btn gs-link">Add Product...</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product Code</th>
+                <th>Product Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0; i < products.length; i++) { %>
+                <tr>
+                <td><%= products[i].id %></td>
+                <td><%= products[i].code %></td>
+                <td><%= products[i].name %></td>
+                <td class="gs-center">
+                    <span class="gs-link gs-icon gs-btn-open" data-id="<%= products[i].id %>" data-model="product"></span>
+                    <span class="gs-link gs-icon gs-btn-delete" data-id="<%= products[i].id %>" data-model="product"></span>
+                </td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+</div>
