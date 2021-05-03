@@ -1,0 +1,12 @@
+{
+    "options": {
+        "server_port": 3000
+    },
+    "database": {
+        "server": "103.17.211.119",
+        "port": 27017,
+        "username": "green",
+        "password": "admin@123",
+        "db_name": "green_system"
+    }
+}

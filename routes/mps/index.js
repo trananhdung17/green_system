@@ -5,17 +5,17 @@ var router = express.Router();
 
 /* GET mps page. */
 router.get('/mps', function(req, res, next) {
-  res.render('mps/index', { title: 'MPS' });
+    res.render('mps/index', { title: 'MPS' });
 });
 
 // router.get('/mps/settings')
-router.get('/mps/products', function (req, res, next) {
+router.get('/mps/products', function(req, res, next) {
 
     var products = ProductModel.search();
-    var productValues = [];
-    for (var i = 0; i < products.length; i++) {
-        productValues.push(products[i].read());
-    }
+    // var productValues = [];
+    // for (var i = 0; i < products.length; i++) {
+    //     productValues.push(products[i].read());
+    // }
     res.render('mps/products', { "subtitle": "Products", "products": products });
 });
 
@@ -24,7 +24,7 @@ router.get('/mps/products', function (req, res, next) {
 // router.delete('/mps/products/:productID/delete')
 // router.post('/mps/products/:productID/update')
 
-router.get('/mps/workcenters', function (req, res, next) {
+router.get('/mps/workcenters', function(req, res, next) {
     var workcenters = [{
         id: 1,
         name: "Modulation Center"
@@ -38,7 +38,7 @@ router.get('/mps/workcenters', function (req, res, next) {
         id: 4,
         name: "Packaging Center"
     }];
-    res.render('mps/workcenters', {"subtitle": "Work Centers", "workcenters": workcenters })
+    res.render('mps/workcenters', { "subtitle": "Work Centers", "workcenters": workcenters })
 });
 // router.post('/mps/workcenters/create')
 // router.get('/mps/workcenters/:workcenterID')
