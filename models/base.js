@@ -1,14 +1,18 @@
+const mongoose = require('mongoose')
+const db = require('../config.json').database
+
+mongoose.connect(`mongodb://${db.username}:${db.password}@${db.server}:${db.port}/${db.db_name}`)
+
+
 class BaseModel {
     static _relation = null
     static _fields = {}
 
     constructor(id) {
         this.id = id
-        this._init_fields()
+        this._fields = this.constructor._fields
+        this._relation = this.constructor._relation
         this._fetch()
-    }
-    _init_fields() {
-        /** TODO */
     }
     _fetch() {
         /** TODO: Fetch field value in database */
