@@ -1,5 +1,4 @@
-const { FieldInteger, FieldFloat, FieldString } = require('./datatype')
-const BaseModel = require('./base')
+const { BaseModel, FieldInteger, FieldFloat, FieldString } = require('./base')
 const demo_products = [{
     id: 1,
     code: "SP09CP01",
